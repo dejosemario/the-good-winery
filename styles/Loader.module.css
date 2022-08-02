@@ -1,0 +1,19 @@
+.Loader{
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        border: red;
+        transform: scale(20);
+        opacity: 1;
+    }
+    50%{
+        border: black;
+        transform: scale(1);
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
