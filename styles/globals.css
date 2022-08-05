@@ -9,19 +9,35 @@ body {
   display: flex;
 }
 
+
+
+/* header section */
 .header{
+  /* glass Effect */
   flex: 0.09;
   background-color: trasnparent;
-  border: 2px solid red;
-  height: 100vh;
+  /* border: 2px solid red; */
+  /* height: 100vh; */
   background: rgba(255, 255, 255, 0.01);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border-right: 1px solid rgba(255, 255, 255, 0.53);
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
+  /* align-items: center; */
+  justify-content: center;
+  z-index: 5;
+  padding-top: 25px;
 }
 
+.menu__icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 5px solid blue; */
+  margin: 15px 0 100px 0;
+}
 
 .others{
   flex: 0.91;
@@ -36,6 +52,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
 
 /* hero__section */
 .hero__section {
