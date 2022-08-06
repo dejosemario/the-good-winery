@@ -11,26 +11,27 @@ function About(props) {
         />
       </div>
       <div className="section__two">
-        <h1>Our History</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate id
-          delectus illum, enim optio corrupti eum numquam quisquam adipisci
-          ipsam doloremque harum dolore! Quaerat eum molestias assumenda
-          consectetur ipsum magni?
-        </p>
-        <a href="#">READ MORE</a>
-        
-        <img
-          style={{ width: "255px", height: "480px" }}
-          src="../images/history-image-5.png"
-          alt="history..."
-        />
+        <div className="section__two__text">
+          <h1>Our History</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+            id delectus illum, enim optio corrupti eum numquam quisquam adipisci
+            ipsam doloremque harum dolore! Quaerat eum molestias assumenda
+            consectetur ipsum magni?
+          </p>
+          <a href="#"> <span>READ MORE</span> </a>
+        </div>
+        <div className="section__two__pic">
+          <img
+            style={{ width: "255px", height: "480px" }}
+            src="../images/history-image-5.png"
+            alt="history..."
+          />
+        </div>
       </div>
-      
 
       <div className="section__three">
-
-      <img
+        <img
           style={{ width: "425px", height: "283px" }}
           src="../images/closeup-grapes-tree-vineyard-sunlight-malta-min.jpg"
           alt="grapes.."

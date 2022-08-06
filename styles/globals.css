@@ -205,10 +205,76 @@ a {
   /* border: 1px solid red; */
   /* align-items: center; */
   justify-content: center;
-  margin-left: 200px
+  margin-left: 200px;
+  margin-top: 100px;
+  
 }
 
 .about__wine .section__two{
  display: flex;
  /* flex-direction: column; */
+ justify-content: space-evenly;
+ /* border: 2px solid red; */
+ flex-basis: 20%;
+}
+
+.section__two__text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* border: 5px solid yellow; */
+  text-align: center;
+  width: 68%;
+}
+
+.section__two__text h1{
+  font-size: 5.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #cf2e2e;
+  z-index: 1;
+  margin: -18px 32px 32px;
+}
+
+.section__two__text p{
+  font-size: 1.3rem;
+  /* font-weight: 300; */
+  margin: 0;
+  padding: 0;
+  width: 65%;
+}
+
+.section__two__text a{
+  
+  padding: 1em;
+  background: transparent;
+  border: 1px solid #cf2e2e;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #cf2e2e;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.section__two__text a:hover{
+  background: #cf2e2e;
+  color: white;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.section__two__pic {
+  /* display: flex; */
+  /* display: none; */
+  justify-content: flex-end;
+  bottom: 5px solid green;
+  margin-top: 150px;
+  justify-content: flex-end;
+}
+
+.section__three{
+  margin-top: -120px;
 }
