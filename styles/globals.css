@@ -5,91 +5,63 @@ body {
   font-family: "Cormorant", serif;
 }
 
-.main{
-  display: flex;
-}
-
-
-
-/* header section */
-.header{
-  /* glass Effect */
-  width: 9%;
-  /* flex: 0.09; */
-  height: 100vh;
-  background-color: transparent;
-  position: fixed;
-  /* border: 2px solid red; */
-  /* height: 100vh; */
-  background: rgba(255, 255, 255, 0.01);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.6px);
-  -webkit-backdrop-filter: blur(3.6px);
-  border-right: 1px solid rgba(255, 255, 255, 0.53);
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  z-index: 5;
-  padding-top: 25px;
-
-}
-
-.menu__icons{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* border: 5px solid blue; */
-  margin: 15px 0 100px 0;
-}
-
-.others{
-  flex: 0.91;
-  /* border: 3px solid red; */
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+*{
   box-sizing: border-box;
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+  border: 8px solid midnightblue;
+}
 
+.others {
+  margin-left: 9%;
+  /* flex: 0.91; */
+}
+.menu__icons {
+  /* border: 2px solid red; */
+  /* flex: 0.09; */
+  width: 9%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  position: fixed;
+}
 
-/* hero__section */
 .hero__section {
   background-image: url("../public/images/wine-and-foods.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
   height: 100vh;
-  color: black;
-  z-index: -1;
-  /* border: 4px solid yellow; */
   display: flex;
   align-items: center;
   justify-content: center;
+  /* width: auto; */
 }
 
 .hero__container {
+  /* border: 1px solid red; */
+  max-width: 40%;
+  /* margin: auto 0; */
+}
+
+.hero__content {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 1rem 0;
-  text-align: center;
-  /* border: 1px solid red; */
 }
 
-.hero__content {
-  max-width: 50%;
-  text-align: center;
-}
-
-.hero__content h1 {
+.hero__container h1 {
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 1.2;
@@ -100,7 +72,8 @@ a {
 .hero__content p {
   font-size: 1.5rem;
   font-weight: 300;
-  /* padding: 0 4rem; */
+  margin-top: 1rem;
+  padding: 0 4rem;
 }
 
 .hero__content span {
@@ -151,130 +124,192 @@ a {
   right: 0;
 }
 
-/* Mobile */
+/* About Section */
 
-@media screen and (max-width: 600px) {
-  .hero__section {
-    background-image: url("../public/images/wine-and-foods.jpg");
+.about__wine {
+  padding: 1rem 0;
+  display: flex;
+  /* border: 1px solid red; */
+  flex-direction: column;
+  /* align-items: center; */
+  margin-left: 30px;
+  margin-top: 70px;
+  /* flex-wrap: wrap; */
+}
+
+.section__one img {
+  width: 473px;
+  height: 315.73px;
+}
+
+.section__two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__two__text p {
+  margin-top: -10px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.section__two__text h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #cf2e2e;
+  z-index: 1;
+  text-align: center;
+  margin: -330px 32px 32px;
+}
+
+.section__two__text a {
+  padding: 1em;
+  background: transparent;
+  border: 1px solid #cf2e2e;
+  margin-bottom: 500px;
+  margin-left: 300px;
+  font-size: 1rem;
+  color: #cf2e2e;
+  /* text-align: center; */
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.section__two__text a:hover {
+  background: #cf2e2e;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.section__two__pic img {
+  width: 285px;
+  height: 533px;
+  /* border: 3px solid burlywood */
+  margin-top: 35px;
+}
+
+.section__three img {
+  width: 473px;
+  height: 315.73px;
+  margin-top: -200px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
     display: flex;
-    justify-items: center;
+    flex-direction: row;
+    /* border: 8px solid midnightblue; */
+  }
+
+  .menu__icons {
+    /* border: 2px solid red; */
+    width: 100vw;
+    display: flex;
+    position: fixed;
     align-items: center;
-    height: 100vh;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 64px;
+  }
+
+  .img__one {
+    order: 2;
+  }
+
+  .img__two {
+    order: 1;
+    margin-left: -15px;
+  }
+
+  .cart__div {
+    order: 3;
+    margin-right: -15px;
+  }
+
+  .others {
+    margin-top: 68px;
+    margin-left: 0;
+  }
+
+  .about-wine {
+    display: flex;
+  }
+  .hero__section {
+    background-image: url("../public/images/mobile-bg.png");
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero__container {
-    padding: 0;
-    margin: 0;
+    /* border: 1px solid red; */
+    max-width: 60%;
   }
 
-  .her__content {
+  .hero__content {
     max-width: 95%;
-    padding: 1rem 4rem;
-    /* padding-bottom: 0; */
-    margin-top: 100px;
-  }
-
-  .hero__action {
-    margin-bottom: 2rem;
+    margin-top: 85px;
   }
 
   .hero__container h1 {
     font-size: 2rem;
   }
 
-  .hero__container p {
+  .hero__content p {
     font-size: 1rem;
     padding: 0;
+    margin-top: -20px;
   }
 
   .hero__action button {
-    padding: 0.5em;
+    padding: 0.5rem;
+    margin-bottom: 50px;
   }
 
-  .hero__section {
-    height: auto;
+  .section__one img {
+    width: 240px;
+    height: 160px;
   }
-}
 
+  .section__two__text h1 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #cf2e2e;
+    z-index: 1;
+    margin: -24px 30px 0px;
+  }
 
-/* About Section */
-.about__wine {
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  /* border: 1px solid red; */
-  /* align-items: center; */
-  justify-content: center;
-  margin-left: 200px;
-  margin-top: 100px;
-  
-}
+  .section__two__text a {
+    position: static;
+    left: 80px;
+    padding: 0.5rem;
+    text-align: center;
+    margin-left: 100px;
+    /* background-color: red; */
+  }
 
-.about__wine .section__two{
- display: flex;
- /* flex-direction: column; */
- justify-content: space-evenly;
- /* border: 2px solid red; */
- flex-basis: 20%;
-}
+  .section__two__text p {
+    text-align: left;
+    margin-left: 55px;
+  }
 
-.section__two__text{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  /* border: 5px solid yellow; */
-  text-align: center;
-  width: 68%;
-}
+  .section__two__pic {
+    display: none;
+  }
 
-.section__two__text h1{
-  font-size: 5.3rem;
-  font-weight: 400;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #cf2e2e;
-  z-index: 1;
-  margin: -18px 32px 32px;
-}
-
-.section__two__text p{
-  font-size: 1.3rem;
-  /* font-weight: 300; */
-  margin: 0;
-  padding: 0;
-  width: 65%;
-}
-
-.section__two__text a{
-  
-  padding: 1em;
-  background: transparent;
-  border: 1px solid #cf2e2e;
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #cf2e2e;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.section__two__text a:hover{
-  background: #cf2e2e;
-  color: white;
-  transition: all 0.5s ease-in-out;
-
-}
-
-.section__two__pic {
-  /* display: flex; */
-  /* display: none; */
-  justify-content: flex-end;
-  bottom: 5px solid green;
-  margin-top: 150px;
-  justify-content: flex-end;
-}
-
-.section__three{
-  margin-top: -120px;
+  .section__three img {
+    width: 240px;
+    height: 160px;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 90px;
+  }
 }

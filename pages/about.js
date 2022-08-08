@@ -5,7 +5,7 @@ function About(props) {
     <div className="about__wine">
       <div className="section__one">
         <img
-          style={{ width: "425px", height: "300px" }}
+          // style={{ width: "100px", height: "100px" }}
           src="../images/california-vineyards-santa-barbara-min.jpg"
           alt="california..."
         />
@@ -19,11 +19,11 @@ function About(props) {
             ipsam doloremque harum dolore! Quaerat eum molestias assumenda
             consectetur ipsum magni?
           </p>
-          <a href="#"> <span>READ MORE</span> </a>
+          <a href="#">READ MORE</a>
         </div>
         <div className="section__two__pic">
           <img
-            style={{ width: "255px", height: "480px" }}
+            // style={{ width: "100px", height: "100px" }}
             src="../images/history-image-5.png"
             alt="history..."
           />
@@ -32,7 +32,6 @@ function About(props) {
 
       <div className="section__three">
         <img
-          style={{ width: "425px", height: "283px" }}
           src="../images/closeup-grapes-tree-vineyard-sunlight-malta-min.jpg"
           alt="grapes.."
         />
