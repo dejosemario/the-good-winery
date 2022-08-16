@@ -257,11 +257,9 @@ body {
 .product__card {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   padding: 1rem;
   margin: 0 2rem;
-  /* border: 1px solid blue; */
   flex-basis: 40%;
 }
 
@@ -407,6 +405,76 @@ form button:hover {
 .map a:hover {
   text-decoration: none;
 }
+
+/* footer section */
+.footer__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  padding: 1rem;
+  /* border-top: 0.1px solid grey; */
+}
+
+.footer__content .links{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__content .links a{
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #cf2e2e;
+  font-size: 18px;
+}
+
+.footer__content .links a:hover{
+  text-decoration: underline;
+}
+
+.footer__content .links ul{ 
+  list-style-type: none;  
+}
+
+.footer__content .social{
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer__content .social .socials:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+
+}
+
+
+.footer__content .copyright{
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: grey;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.love{
+  color: #cf2e2e;
+  /* letter-spacing: 3rem; */
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.love:hover{
+  transform: scale(1.25);
+
+}
+
+
 
 @media screen and (max-width: 600px) {
   .main {
