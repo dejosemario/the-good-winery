@@ -333,6 +333,12 @@ body {
   justify-content: space-around;
 }
 
+
+form input, textarea{
+  font-family: inherit;
+  font-weight: 400;
+}
+
 .form__group {
   font-family: inherit;
   margin-bottom: 2rem;
@@ -600,13 +606,29 @@ form button:hover {
     font-size: 2.5rem;
 }
 
+  form input, textarea{
+    font-family: inherit;
+    font-weight: 200;
+  }
+
   form button{
     align-items: center;
-    /* border: 5px solid green; */
-    /* margin-left: 700px; */
+    width: 100%;
+    font-weight: lighter;
+    font-family: inherit;
+
   }
 
   .form__group textarea{
     width: 100%;
+  }
+
+  .map a, p{
+    display: none;
+  }
+
+  .map{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
   }
 }
